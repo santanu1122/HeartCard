@@ -1,0 +1,45 @@
+//
+// Prefix header for all source files of the 'HeartCard' target in the 'HeartCard' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "GlobalMethod.h"
+    #import "GlobalViewController.h"
+#endif
+
+#define SESSION_USERCREDITS @"happyheARTuserCredits"
+#define SESSION_FIRSTUSER @"happyheARTfirstUserExperience"
+
+#define UIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define  IsIphone5 (([[UIScreen mainScreen] bounds].size.height)>500)?true:false
+
+#define DeviceId [UIDevice currentDevice].identifierForVendor.UUIDString
+
+//#define API @"http://www.esolzdemos.com/lab3/heartcard/api/IOS/"
+//#define BASEURL @"http://www.esolzdemos.com/lab3/heartcard/"
+
+//#define API @"http://www.xplodebuilds.com/heartcard/api/IOS/"
+//#define BASEURL @"http://www.xplodebuilds.com/heartcard/"
+
+//#define API @"http://www.paintedmoonstudios.com/card/api/IOS/"
+//#define BASEURL @"http://www.paintedmoonstudios.com/card/"
+
+//www.happyheARTcards.net
+
+//#define API @"http://www.paintedmoonstudios.com/happyheartcards/api/IOS/"
+//#define BASEURL @"http://www.paintedmoonstudios.com/happyheartcards/"
+
+#define API @"http://www.happyheartcards.net/api/IOS/"
+#define BASEURL @"http://www.happyheartcards.net/"
